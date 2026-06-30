@@ -1,328 +1,195 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ecoarchi — Handmade, Earth-Made</title>
-
-  <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecoarchi</title>
+    <link rel="icon" href="assets/icon.jpg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- =========================
-       HEADER
-  ========================== -->
-  <header class="navbar" id="navbar">
-    <div class="container navbar__container">
-      <a href="#hero" class="navbar__brand">
-        <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
-          <circle cx="16" cy="16" r="14" fill="#3D7A4E"/>
-          <path d="M16 6L18.5 12.5L25 13.5L20 18.5L21.5 25L16 21.5L10.5 25L12 18.5L7 13.5L13.5 12.5L16 6Z" fill="white"/>
-        </svg>
-        <span>Ecoarchi</span>
-      </a>
-
-      <nav class="navbar__links">
-        <a href="#about">Tentang</a>
-        <a href="#products">Produk</a>
-        <a href="#impact">Dampak</a>
-        <a href="#contact" class="button button--primary button--small">
-          Pesan
-        </a>
-      </nav>
-
-      <button
-        id="hamburger"
-        class="navbar__toggle"
-        aria-label="Buka menu"
-        type="button"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-
-    <nav class="navbar__mobile" id="mobileMenu">
-      <a href="#about">Tentang</a>
-      <a href="#products">Produk</a>
-      <a href="#impact">Dampak</a>
-      <a href="#contact" class="button button--primary button--full">
-        Pesan Sekarang
-      </a>
-    </nav>
-  </header>
-
-  <!-- =========================
-       HERO
-  ========================== -->
-  <section class="hero" id="hero">
-    <div class="container hero__container">
-      <div class="hero__content">
-        <span class="hero__badge">
-          🌱 Eco Brand · Sustainable Local Business
-        </span>
-
-        <h1 class="hero__title">
-          Dari Limbah Menjadi Karya,<br />
-          Untuk Bumi yang Lebih Baik
-        </h1>
-
-        <p class="hero__description">
-          Ecoarchi adalah UMKM lokal yang mengubah limbah menjadi produk
-          kerajinan tangan bernilai tinggi.
-        </p>
-
-        <div class="hero__actions">
-          <a href="#products" class="button button--primary">
-            Lihat Produk
-          </a>
-
-          <a href="#about" class="button button--outline">
-            Kenali Kami
-          </a>
+    <header class="navbar" id="navbar">
+        <div class="container nav-wrap">
+            <h1 class="logo">Ecoarchi</h1>
+            <nav class="nav-links">
+                <a href="#hero">Tentang</a>
+                <a href="#Cerita">Cerita</a>
+                <a href="#produk">Produk</a>
+                <a href="#kontak">Pesan</a>
+            </nav>
+            <button class="hamburger" id="hamburger" type="button" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
-      </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#hero">Tentang</a>
+            <a href="#Cerita">Cerita</a>
+            <a href="#produk">Produk</a>
+            <a href="#kontak">Pesan</a>
+        </div>
+    </header>
 
-      <div class="hero__media">
-        <!-- SVG hero lama ditempel di sini -->
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================
-       ABOUT
-  ========================== -->
-  <section class="about" id="about">
-    <div class="container about__container">
-
-      <div class="about__media">
-        <!-- SVG about lama -->
-      </div>
-
-      <div class="about__content">
-        <span class="section-label">
-          🌱 SDG 12 · Responsible Consumption
-        </span>
-
-        <h2>
-          Lahir dari Surakarta,<br />
-          Dibentuk oleh Tangan Lokal
-        </h2>
-
-        <p>
-          Ecoarchi berdiri sejak 2021 di Surakarta sebagai inisiatif
-          keberlanjutan yang berfokus pada pengolahan limbah menjadi produk
-          bernilai ekonomi tinggi.
-        </p>
-
-        <ul class="about__values">
-          <li class="value-card">
-            <div class="value-card__icon"></div>
-
-            <div class="value-card__content">
-              <strong>Bahan Daur Ulang</strong>
-              <span>Minimal 80% material dari limbah lokal</span>
+    <section class="hero reveal active" id="hero">
+        <div class="container hero-wrap">
+            <div class="hero-text">
+                <span class="badge">SDG 12</span>
+                <h2>Dari limbah menjadi karya</h2>
+                <p>
+                    Limbah dapat diolah menjadi
+                    produk bernilai guna yang mendukung keberlanjutan lingkungan.
+                </p>
+                <div class="hero-btn">
+                    <a href="#produk" class="btn-link">Lihat Produk</a>
+                    <a href="#kontak" class="btn-link">Kenali Kami</a>
+                </div>
             </div>
-          </li>
-
-          <li class="value-card">
-            <div class="value-card__icon"></div>
-
-            <div class="value-card__content">
-              <strong>Sepenuhnya Handmade</strong>
-              <span>Dikerjakan langsung oleh pengrajin</span>
+            <div class="hero-img">
+                <img src="assets/hero.jpg" alt="Hero" />
             </div>
-          </li>
+        </div>
+    </section>
 
-          <li class="value-card">
-            <div class="value-card__icon"></div>
-
-            <div class="value-card__content">
-              <strong>Mendukung UMKM Lokal</strong>
-              <span>30% keuntungan kembali ke komunitas</span>
+    <!-- CERITA -->
+    <section class="Cerita reveal" id="Cerita">
+        <div class="container">
+            <h2 class="section-title">Cerita Ecoarchi</h2>
+            <div class="Cerita-box">
+                <p>Ecoarchi lahir dari kenyataan bahwa Indonesia menghasilkan sekitar 60 juta ton sampah per tahun, dengan lebih dari 5 juta ton di antaranya adalah plastik dan hanya sekitar 22% yang berhasil didaur ulang. Di balik angka ini, ada pemulung, ibu-ibu bank sampah, dan UMKM seperti Rappo di Makassar yang mengubah limbah plastik menjadi tas laptop hingga tote bag, serta komunitas Recycling Village yang memberdayakan perempuan marginal. Terinspirasi oleh gerakan ekonomi sirkular dan program bank sampah digital yang telah mengelola puluhan ton sampah serta melibatkan lebih dari 75% perempuan, Ecoarchi hadir sebagai jembatan antara limbah dan karya bernilai guna. Setiap produk kami—dari kantong kain, dompet batik daur ulang, hingga pulpen dan buku catatan dari kertas daur ulang—adalah bukti bahwa sampah dapat disulap menjadi barang estetis, fungsional, dan ekonomis, sekaligus memberdayakan perajin lokal dan mendukung gaya hidup berkelanjutan. Karena masalah sampah tidak bisa diselesaikan sendiri, Ecoarchi mengajak Anda menjadi bagian dari perubahan.</p>
             </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================
-       PRODUCTS
-  ========================== -->
-  <section class="products" id="products">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">🌱 Katalog Produk Lokal</span>
-        <h2>Temukan Karya yang Berbicara</h2>
-      </div>
-
-      <div class="products__grid">
-
-        <article class="product-card">
-          <div class="product-card__media"></div>
-
-          <div class="product-card__body">
-            <h3>Tote Bag Jute Alami</h3>
-            <p>Tas belanja dari serat goni lokal.</p>
-
-            <span class="product-card__material">
-              Bahan: Goni daur ulang
-            </span>
-
-            <a href="#" class="button button--outline button--small">
-              Pesan
-            </a>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-card__media"></div>
-
-          <div class="product-card__body">
-            <h3>Pot Tanaman Eco</h3>
-            <p>Pot dekoratif dari material daur ulang.</p>
-
-            <span class="product-card__material">
-              Bahan: Plastik recycle
-            </span>
-
-            <a href="#" class="button button--outline button--small">
-              Pesan
-            </a>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-card__media"></div>
-
-          <div class="product-card__body">
-            <h3>Dompet Serat Alam</h3>
-            <p>Praktis, ringan, dan ramah lingkungan.</p>
-
-            <span class="product-card__material">
-              Bahan: Serat alam
-            </span>
-
-            <a href="#" class="button button--outline button--small">
-              Pesan
-            </a>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-card__media"></div>
-
-          <div class="product-card__body">
-            <h3>Lampu Dekoratif</h3>
-            <p>Pencahayaan artistik dari limbah kayu.</p>
-
-            <span class="product-card__material">
-              Bahan: Kayu recycle
-            </span>
-
-            <a href="#" class="button button--outline button--small">
-              Pesan
-            </a>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================
-       IMPACT
-  ========================== -->
-  <section class="impact" id="impact">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">🌱 Dampak Keberlanjutan</span>
-        <h2>Setiap Produk, Setiap Langkah Berarti</h2>
-      </div>
-
-      <div class="impact__grid">
-        <div class="impact-card">
-          <span class="impact-card__number">1.200+</span>
-          <span class="impact-card__label">Kg Limbah Didaur Ulang</span>
         </div>
+    </section>
 
-        <div class="impact-card">
-          <span class="impact-card__number">45+</span>
-          <span class="impact-card__label">Pengrajin Lokal</span>
+    <section class="produk reveal" id="produk">
+        <div class="container">
+            <h2 class="section-title">Produk Kami</h2>
+            <div class="grid-produk">
+                <article class="card">
+                    <div class="gambar"><img src="assets/product1.jpg" alt="Kantong Kain Daur Ulang" /></div>
+                    <div class="isi">
+                        <h3>Kantong Kain Daur Ulang</h3>
+                        <p>Dompet cantik yang terbuat dari kain sisa ini tidak hanya menawarkan desain unik yang dapat dikustomisasi dengan logo atau merek Anda, tetapi juga menjadi langkah nyata dalam melindungi planet kita dari limbah tekstil.</p>
+                        <span>Bahan: Kanvas &amp; Kain sisa</span>
+                        <a href="#kontak" class="mini-btn">Pesan</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="gambar"><img src="assets/product2.jpg" alt="Dompet Kartu Batik Daur Ulang" /></div>
+                    <div class="isi">
+                        <h3>Dompet Kartu Batik Daur Ulang</h3>
+                        <p>Tunjukkan kebanggaan Indonesia Anda dengan dompet kartu batik yang terbuat dari plastik daur ulang dengan motif batik khas Nusantara, yang dapat dipesan dalam berbagai warna sesuai ketersediaan serta dapat dikustomisasi dengan logo atau merek Anda.</p>
+                        <span>Bahan: Plastik daur ulang yang dipres</span>
+                        <a href="#kontak" class="mini-btn">Pesan</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="gambar"><img src="assets/product3.jpg" alt="Tas Tote dari Kain Daur Ulang" /></div>
+                    <div class="isi">
+                        <h3>Tas Tote dari Kain Daur Ulang</h3>
+                        <p>Tas jinjing elegan yang terbuat dari kain sisa ini menawarkan desain unik dengan pola yang tidak akan sama untuk setiap karya, sehingga memberikan nilai eksklusif tersendiri, dan dapat dikustomisasi dengan logo atau merek Anda</p>
+                        <span>Bahan: Kanvas &amp; Kain sisa</span>
+                        <a href="#kontak" class="mini-btn">Pesan</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="gambar"><img src="assets/product4.jpg" alt="Pulpen Ramah Lingkungan" /></div>
+                    <div class="isi">
+                        <h3>Pulpen Ramah Lingkungan</h3>
+                        <p>Pulpen ramah lingkungan yang terbuat dari kertas daur ulang ini merupakan pilihan sempurna bagi para kreatif yang peduli lingkungan, pelajar, atau sebagai hadiah berkelanjutan yang unik, dan dapat dikustomisasi dengan logo atau merek Anda untuk mendukung gaya hidup hijau tanpa mengorbankan fungsionalitas.</p>
+                        <span>Bahan: Kertas daur ulang</span>
+                        <a href="#kontak" class="mini-btn">Pesan</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="gambar"><img src="assets/product5.jpg" alt="Organizer Meja Daur Ulang" /></div>
+                    <div class="isi">
+                        <h3>Organizer Meja Daur Ulang</h3>
+                        <p>Tingkatkan tampilan kantor Anda dengan organizer meja yang ramah lingkungan, bergaya, dan fungsional ini, yang terbuat dari bahan plastik keras daur ulang berkualitas tinggi</p>
+                        <span>Bahan: Plastik keras daur ulang</span>
+                        <a href="#kontak" class="mini-btn">Pesan</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="gambar"><img src="assets/product6.jpg" alt="Buku Catatan dari Kertas Daur Ulang" /></div>
+                    <div class="isi">
+                        <h3>Buku Catatan dari Kertas Daur Ulang</h3>
+                        <p>Buku catatan A5 ringkas yang terbuat dari 100% kertas daur ulang ini, dengan ukuran 14,8 x 21 cm, sangat sempurna untuk mencatat, membuat sketsa, atau menangkap ide saat bepergian, sekaligus memberikan kontribusi nyata bagi lingkungan karena setiap produk mengurangi 1 kg limbah kertas dan menghemat karbon hingga 53,24% dibandingkan dengan buku catatan biasa.</p>
+                        <span>Bahan: Kertas daur ulang</span>
+                        <a href="#kontak" class="mini-btn">Pesan</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="gambar"><img src="assets/product7.jpg" alt="Sarung Laptop dari Plastik Daur Ulang" /></div>
+                    <div class="isi">
+                        <h3>Sarung Laptop dari Plastik Daur Ulang</h3>
+                        <p>Sarung laptop bergaya yang terbuat dari limbah plastik daur ulang ini membantu menjaga perangkat Anda tetap aman, dengan pilihan material alternatif seperti banner bekas, Denim Tyvek, atau PET daur ulang, serta tersedia dalam ukuran 13 inci (34 x 24 x 2,5 cm) dan 15 inci (37 x 26 x 3 cm) yang dilengkapi dengan 2 saku depan.</p>
+                        <span>Bahan: Plastik daur ulang</span>
+                        <a href="#kontak" class="mini-btn">Pesan</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="gambar"><img src="assets/product8.jpg" alt="Tatakan Gelas dari Plastik Daur Ulang" /></div>
+                    <div class="isi">
+                        <h3>Tatakan Gelas dari Plastik Daur Ulang</h3>
+                        <p>Tatakan gelas ramah lingkungan yang terbuat dari 100% limbah plastik HDPE daur ulang ini hadir dengan berbagai pola warna yang bervariasi tergantung pada warna plastik, menjadikannya hadiah yang tepat sekaligus dapat dikustomisasi dengan logo merek Anda, dengan ukuran 10 cm x 11,5 cm x 0,7 cm, setiap produk menghemat 50 gram limbah plastik dan mengurangi karbon hingga 12,86% dibandingkan dengan tatakan gelas polipropilen (PP) biasa.</p>
+                        <span>Bahan: Plastik daur ulang</span>
+                        <a href="#kontak" class="mini-btn">Pesan</a>
+                    </div>
+                </article>
+            </div>
         </div>
+    </section>
 
-        <div class="impact-card">
-          <span class="impact-card__number">80%</span>
-          <span class="impact-card__label">Material Daur Ulang</span>
+    <section class="kontak reveal" id="kontak">
+        <div class="container kontak-wrap">
+            <div class="kontak-img">
+                <img src="assets/contact.jpg" alt="Workshop" />
+            </div>
+            <div class="kontak-form">
+                <h2>Hubungi Kami</h2>
+                <form id="contactForm" action="https://formspree.io/f/xwvdnlyp" method="POST">
+                    <input type="text" name="nama" placeholder="Nama" required />
+                    <input type="email" name="email" placeholder="Email" required />
+                    <textarea name="pesan" placeholder="Pesan" required></textarea>
+                    <button class="submit-btn" type="submit">Kirim Pesan</button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
         </div>
+    </section>
 
-        <div class="impact-card">
-          <span class="impact-card__number">3.500+</span>
-          <span class="impact-card__label">Produk Terjual</span>
+    <footer>
+        <div class="footer-links">
+            <a href="#hero">Tentang</a>
+            <a href="#Cerita">Cerita</a>
+            <a href="#produk">Produk</a>
+            <a href="#kontak">Pesan</a>
         </div>
-      </div>
-    </div>
-  </section>
+        <div class="footer-credit">
+            <p>
+                <strong>Kredit Gambar:</strong>
+                <a href="https://liberty-society.com/products/tetra-pak-lunch-bag-copy?_pos=60&_sid=965f726eb&_ss=r" target="_blank">Hero</a> &middot;
+                <a href="https://liberty-society.com/pages/contact" target="_blank">Kontak</a> &middot;
+                <a href="https://liberty-society.com/pages/green-experiences?_pos=10&_sid=09832404b&_ss=r" target="_blank">Favicon</a> &middot;
+                <a href="https://liberty-society.com/products/customizable-upcycled-fabric-pouch?_pos=4&_sid=4cf5924c1&_ss=r" target="_blank">Produk 1</a> &middot;
+                <a href="https://liberty-society.com/products/batik-card-wallet?_pos=87&_sid=4cf5924c1&_ss=r" target="_blank">Produk 2</a> &middot;
+                <a href="https://liberty-society.com/products/customizable-upcycled-fabric-tote-bag?_pos=79&_sid=4cf5924c1&_ss=r" target="_blank">Produk 3</a> &middot;
+                <a href="https://liberty-society.com/products/pensil-tanam-copy?_pos=6&_sid=4cf5924c1&_ss=r" target="_blank">Produk 4</a> &middot;
+                <a href="https://liberty-society.com/products/upcycled-desk-organizer?_pos=33&_sid=4cf5924c1&_ss=r" target="_blank">Produk 5</a> &middot;
+                <a href="https://liberty-society.com/products/recycled-notebook-1?_pos=92&_sid=4cf5924c1&_ss=r" target="_blank">Produk 6</a> &middot;
+                <a href="https://liberty-society.com/products/pressed-plastic-laptop-sleeve-3?_pos=9&_sid=4cf5924c1&_ss=r" target="_blank">Produk 7</a> &middot;
+                <a href="https://liberty-society.com/products/customizable-upcycled-plastic-coaster?_pos=83&_sid=4cf5924c1&_ss=r" target="_blank">Produk 8</a>
+                <br />
+                <span class="credit-note">Semua gambar berasal dari <a href="https://liberty-society.com" target="_blank">Liberty Society</a>.</span>
+                <br />
+                <span class="credit-note">Background &amp; icon oleh <a href="https://www.magnific.com/author/vectorcorp" target="_blank">Vectorcorp</a>.</span>
+            </p>
+        </div>
+    </footer>
 
-  <!-- =========================
-       CONTACT
-  ========================== -->
-  <section class="contact" id="contact">
-    <div class="container contact__container">
-      <div class="contact__content">
-        <h2>Mari Berkolaborasi untuk Bumi</h2>
-        <p>
-          Hubungi kami untuk kolaborasi, pemesanan, atau pertanyaan lebih lanjut.
-        </p>
-      </div>
-
-      <form class="contact-form" id="contactForm">
-        <input
-          class="contact-form__input"
-          type="text"
-          placeholder="Nama"
-          required
-        />
-
-        <input
-          class="contact-form__input"
-          type="email"
-          placeholder="Email"
-          required
-        />
-
-        <textarea
-          class="contact-form__textarea"
-          placeholder="Pesan"
-        ></textarea>
-
-        <button class="button button--primary button--full">
-          Kirim Pesan
-        </button>
-      </form>
-    </div>
-  </section>
-
-  <!-- =========================
-       FOOTER
-  ========================== -->
-  <footer class="footer">
-    <div class="container footer__container">
-      <div class="footer__brand">
-        Ecoarchi
-      </div>
-
-      <nav class="footer__links">
-        <a href="#about">Tentang</a>
-        <a href="#products">Produk</a>
-        <a href="#impact">Dampak</a>
-        <a href="#contact">Kontak</a>
-      </nav>
-    </div>
-  </footer>
-
-  <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
